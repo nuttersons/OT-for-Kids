@@ -1,0 +1,35 @@
+#get rid of bad bots
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} ^BadBot [OR]
+RewriteCond %{HTTP_USER_AGENT} ^EvilScraper [OR]
+RewriteCond %{HTTP_USER_AGENT} ^FakeUser
+RewriteRule ^(.*)$ http://go.away/
+
+
+
+
+Allow from all
+
+ErrorDocument 404 /notfound.php
+
+
+
+redirect 301 /careers http://www.otforkids.co.uk/careers.php
+redirect 301 /TeachPrimary http://www.otforkids.co.uk/go/teach-primary.php
+redirect 301 /teachprimary http://www.otforkids.co.uk/go/teach-primary.php
+redirect 301 /jobs http://www.otforkids.co.uk/go/jobs.php
+redirect 301 /Jobs http://www.otforkids.co.uk/go/jobs.php
+redirect 301 /NHA http://www.otforkids.co.uk/go/nha.php
+redirect 301 /nha http://www.otforkids.co.uk/go/nha.php
+redirect 301 /QA http://www.otforkids.co.uk/go/qa.php
+redirect 301 /qa http://www.otforkids.co.uk/go/qa.php
+redirect 301 /PTU http://www.otforkids.co.uk/go/ptu.php
+redirect 301 /ptu http://www.otforkids.co.uk/go/ptu.php
+redirect 301 /schools http://www.otforkids.co.uk/services/ot-groups-for-schools/index.php
+
+redirect 301 /handwriting http://www.otforkids.co.uk/events/handwriting.php
+redirect 301 /events/handwriting http://www.otforkids.co.uk/events/handwriting.php
+redirect 301 /handwritingfree http://www.otforkids.co.uk/events/handwriting-free.php
+redirect 301 /events/handwritingfree http://www.otforkids.co.uk/events/handwriting-free.php
+redirect 301 /events/improvehandwriting http://www.otforkids.co.uk/events/handwriting-nov.php
+redirect 301 /improvehandwriting http://www.otforkids.co.uk/events/handwriting-nov.php
